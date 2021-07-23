@@ -146,7 +146,57 @@
 
 //Task 8 Запросить у пользователя длину окружности и периметр квадрата. 
 //Определить, может ли такая окружность поместиться в указанный квадрат.
-let information = prompt ("Enter the circuit and perimeter of the square.")
-let circuit = 34;
-let perimeterOfTheSquare = 48;
-if (circuit === 34 )
+// let circleLength = prompt("Enter length");
+// let squarePerimeter = prompt("Enter perimeter");
+// let side = squarePerimeter / 4;
+// let diameter = circleLength / Math.PI;
+// circleLength = +circleLength;
+// squarePerimeter = +squarePerimeter;
+// if (diameter > side){
+//    alert("fit");
+// } 
+// else  {
+//    alert("Will_not_fit");
+// }
+
+
+//Task 9 Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. 
+//За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
+// let questionOne = prompt ("Sky is blue? 1- yes, 2 - maybe, 3 - no");
+// let questionTwo = prompt ("Is the cloud white? 1- yes, 2 - maybe, 3 - no");
+// let questionThird = prompt("is the snow yellow? 1- yes, 2 - maybe, 3 - no");
+// questionOne = +questionOne;
+// questionTwo = +questionTwo;
+// questionThird = +questionThird;
+// let score = 0;
+// if (questionOne === 1){
+//   (score +=2);
+// }
+
+// if (questionTwo === 1){
+//     (score +=2);
+// }
+
+// if (questionThird === 3){
+//     (score +=2);
+// }
+
+//     alert(score);    писать без кавычек, потому что это переменная. " это строка!"
+
+
+
+
+//Task 10 Запросить дату (день, месяц, год) и вывести следующую за ней дату.
+// Учтите возможность перехода на следующий месяц, год, а также високосный год.
+let day = prompt ("Enter day");
+let month = prompt ("Enter month");
+let year = prompt ("Enter year");
+day = +day;
+month = +month;
+year = +year;
+const nextDay = new Date(year, month+1, day+1);
+console.log (nextDay);
+alert (nextDay);
+
+
+
